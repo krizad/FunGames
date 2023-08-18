@@ -268,6 +268,7 @@ function getDistinctSumsAndNumbers() {
 
 function startAutoPlay() {
     startGame();
+    autoPlay()
     intervalId = setInterval(autoPlay, 3000);
 
 
