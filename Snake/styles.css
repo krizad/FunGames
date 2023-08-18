@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.game-container {
+    width: 400px;
+    height: 400px;
+    border: 2px solid #000;
+    position: relative;
+    margin: 0 auto;
+}
+
+.snake-head {
+    width: 20px;
+    height: 20px;
+    background-color: green;
+    position: absolute;
+}
+
+.snake-body {
+    width: 20px;
+    height: 20px;
+    background-color: green;
+    position: absolute;
+}
+
+.food {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    position: absolute;
+}
