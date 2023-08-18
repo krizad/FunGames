@@ -8,12 +8,23 @@
 </head>
 <body>
     <h1>Snake Game</h1>
+    <div class="score-container">
+        <h2>Score: <span id="score">0</span></h2>
+    </div>
+
     <div class="game-container" id="game-container">
         <div class="snake-head" id="snake-head"></div>
         <div class="snake-part" id="snake-part">
             <div class="snake-part" id="snake-body"></div>
         </div>
     </div>
+
+    <!-- restart -->
+    <div class="restart-container" id="restart-container">
+        <h2 style="display: none;">Game Over</h2>
+        <button id="restart-btn">Restart</button>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
