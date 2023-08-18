@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Dice Sum Matching Game</title>
+</head>
+
+<body>
+    <h1>Dice Sum Matching Game</h1>
+    <p>Roll the dice to match target numbers using chosen sums!</p>
+
+    <button id="start-button">Start Game</button>
+    <button id="auto-play-button">Auto Play</button>
+    <button id="reset-button" class="hidden">Reset Game</button>
+
+    <div id="game-container">
+        <div id="dice-container" class="hidden">
+            <button id="roll-dice-button" class="hidden">Roll Dice</button>
+            <p>You rolled: <span id="dice1"></span> and <span id="dice2"></span></p>
+            <p>Total: <span id="total"></span></p>
+        </div>
+        <div id="target-container" class="hidden">
+            <p>Remaining target numbers: <span id="remaining-targets"></span></p>
+            <label for="chosen-numbers">Choose numbers to match (comma-separated):</label>
+            <input type="text" id="chosen-numbers">
+            <button id="submit-button">Submit</button>
+            <p id="result"></p>
+        </div>
+    </div>
+
+    <div id="game-log">
+        <h2>Game Log</h2>
+        <ul id="log-list"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
